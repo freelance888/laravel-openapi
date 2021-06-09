@@ -1,0 +1,51 @@
+{
+    "name": "allatra-it/laravel-openapi",
+    "description": "Easy way to generate OpenAPI specification for your Laravel Applications",
+    "keywords": [
+        "allatra-it",
+        "laravel-openapi"
+    ],
+    "homepage": "https://github.com/allatra-it/laravel-openapi",
+    "type": "library",
+    "authors": [
+        {
+            "name": "ALLATRA IPM participants",
+            "email": "it@allatra.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AllatraIt\\LaravelOpenapi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AllatraIt\\LaravelOpenapi\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AllatraIt\\LaravelOpenapi\\LaravelOpenapiServiceProvider"
+            ],
+            "branch-alias": {
+                "dev-master": "0.1-dev"
+            }
+        }
+    }
+}
