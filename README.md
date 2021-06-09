@@ -17,7 +17,7 @@ composer require allatra-it/laravel-openapi --dev
 Run the following command to publish the package config file:
 
 ```bash
-php artisan vendor:publish --provider="AllatraIt\LaravelOpenapi\LaravelOpenapiServiceProvider"
+php artisan vendor:publish --provider="AllatraIt\LaravelOpenapi\LaravelOpenapiServiceProvider" --tag="config"
 ```
 
 You should now have a config/openapi.php file that allows you to configure the basics of this package.
