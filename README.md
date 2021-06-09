@@ -12,3 +12,12 @@ You can install the package via composer:
 ```bash
 composer require allatra-it/laravel-openapi --dev
 ```
+
+## Publish the config
+Run the following command to publish the package config file:
+
+```bash
+php artisan vendor:publish --provider="AllatraIt\LaravelOpenapi\LaravelOpenapiServiceProvider"
+```
+
+You should now have a config/openapi.php file that allows you to configure the basics of this package.
